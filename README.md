@@ -2,7 +2,7 @@
 
 An admin-focused repair override tool for DayZ.
 
-This mod allows designated users to restore supported items directly to **pristine** condition in a single action.  
+This mod allows designated users to restore supported items directly to **pristine** condition in a single action, using the appropriate repair kit for the item type.  
 Designed primarily for server administration and testing environments.
 
 ## Features
