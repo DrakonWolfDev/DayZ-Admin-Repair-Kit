@@ -24,6 +24,10 @@ If server owners choose to provide it to regular players, economy and balance im
 - Verified working with DayZ Expansion
 - Pending 1.29 confirmation
 
+## Localization
+
+Localized kit names and descriptions are included for English, Czech, German, Russian, Polish, Hungarian, Italian, Spanish, French, Traditional Chinese, Japanese, Portuguese, and Simplified Chinese. DayZ falls back to the English text when a client language is unavailable.
+
 ## License
 
 MIT License — free to use, modify, and redistribute with attribution.

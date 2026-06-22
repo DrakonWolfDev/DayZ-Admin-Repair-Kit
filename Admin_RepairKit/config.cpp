@@ -1,9 +1,9 @@
-#define _ARMA_
-
 class CfgPatches
 {
 	class Admin_RepairKit
 	{
+		units[] = {"Admin_WeaponRepairKit","Admin_ItemRepairKit"};
+		weapons[] = {};
 		requiredVersion = 0.1;
 		requiredAddons[] = {"DZ_Gear_Tools"};
 	};
@@ -15,25 +15,15 @@ class CfgMods
 	{
 		type = "mod";
 		author = "DrakonWolf";
-		name = "Admin_RepairKit";
-		dependencies[] = {"Game", "World", "Mission"};
+		name = "Admin Repair Kit";
+		dependencies[] = {"World"};
 
 		class defs
 		{
-			class gameScriptModule
-			{
-				value = "";
-				files[] = {"Admin_RepairKit/scripts/3_Game"};
-			};
 			class worldScriptModule
 			{
 				value = "";
 				files[] = {"Admin_RepairKit/scripts/4_World"};
-			};
-			class missionScriptModule
-			{
-				value = "";
-				files[] = {"Admin_RepairKit/scripts/5_Mission"};
 			};
 		};
 	};
@@ -43,13 +33,14 @@ class CfgVehicles
 {
 	class Inventory_Base;
 
+	// Keep two kits: vanilla repair recipes match the kit's parent class, not only repairKitType.
 	// Weapon + Ammo repair
 	class WeaponCleaningKit: Inventory_Base{};
 	class Admin_WeaponRepairKit: WeaponCleaningKit
 	{
 		scope = 2;
-		displayName = "Admin Weapon Repair Kit";
-		descriptionShort = "An admin kit that repairs any weapon or ammo to pristine condition.";
+		displayName = "$STR_ARK_ADMIN_WEAPON_REPAIR_KIT";
+		descriptionShort = "$STR_ARK_ADMIN_WEAPON_REPAIR_KIT_DESC";
 		model = "\dz\gear\tools\cleaning_kit_wood.p3d";
 		itemSize[] = {2,3};
 		repairKitType = 999;
@@ -60,8 +51,8 @@ class CfgVehicles
 	class Admin_ItemRepairKit: ElectronicRepairKit
 	{
 		scope = 2;
-		displayName = "Admin Item Repair Kit";
-		descriptionShort = "An admin kit that repairs any clothing or gear to pristine condition.";
+		displayName = "$STR_ARK_ADMIN_ITEM_REPAIR_KIT";
+		descriptionShort = "$STR_ARK_ADMIN_ITEM_REPAIR_KIT_DESC";
 		model = "\dz\gear\tools\electronicCase.p3d";
 		itemSize[] = {1,2};
 		repairKitType = 998;
