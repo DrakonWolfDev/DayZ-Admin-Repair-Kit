@@ -32,6 +32,3 @@ Localized kit names and descriptions are included for English, Czech, German, Ru
 
 MIT License — free to use, modify, and redistribute with attribution.
 
-## 🍪 Buy the Dragon a Biscuit
-
-If this project saved you time or made your DayZ life a little easier, you can [support my open-source work through GitHub Sponsors](https://github.com/sponsors/DrakonWolfDev). Donations are never expected, but they help cover development costs, hosting, and the occasional emergency biscuit.
